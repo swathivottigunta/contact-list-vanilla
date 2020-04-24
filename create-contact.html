@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Swathi" />
+    <meta name="description" content="Vanilla Javascript - Contact List App - add, edit, delete the contact" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Contact List</title>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html"><i class="fas fa-address-book"></i> <span class="heading">Contacts</span></a></h1>
+        <nav>
+            <ul id="menu">
+              <li><a href="index.html">Home <i class="fas fa-home"></i></a></li>
+              <li><span>|</span></li>
+              <li class="current"><a href="create-contact">Create <i class="fas fa-user-plus"></i></a></li>
+            </ul>
+          </nav>
+    </header>
+    <section id="app">
+        <h4>Create a Contact</h4>
+        <div id="info-message"></div>
+        <form id="contact-form" novalidate autocomplete="off">
+            <div class="contact-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email">
+                <div class="error-message"></div>
+            </div>
+            <div class="contact-group">
+                <label for="first-name">First Name *</label>
+                <input type="text" id="first-name" name="firstName" maxlength="25">
+                <div class="error-message"></div>
+            </div>
+            <div class="contact-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="lastName" maxlength="30">
+                <div class="error-message"></div>
+            </div>
+            <a href="#" class="button" >Add Contact</a>
+        </form>
+        
+    </section>
+
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/store/store.js"></script>
+    <script type="text/javascript" src="js/lib/utilities.js"></script>
+    <script type="text/javascript" src="js/components/add.js"></script>    
+</body>
+<style>
+    
+</style>
+
+</html>
